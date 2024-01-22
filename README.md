@@ -1,5 +1,5 @@
 # arithmetic-program-synthesis
-Developed a basic arithmetic program synthesizer in Python for COMP 597 at McGill.
+Developed a basic arithmetic program synthesizer in Python for COMP 597 at McGill. The program takes two inputs: an array of arrays containing operands and an array containing results. The program returns an operation 
 
 ## Usage:
 ### Synthesizer:
@@ -8,12 +8,12 @@ main(ins, outs)
 - outs: 1d array of int
 
 ### Example:
-main([[1,2], [0,0,0,5], [2,2]], [3, 5, 2])
-- output: 
+- ins = [[1,2], [0,0,0,5], [2,2]]
+- outs = [3, 5, 2]
+main(ins, outs) prints "+"
 
 
 
-For case generation:
-
-case ins = casegen.w_sets_of_n_ints(number of sets, number of inputs)
-case outs = casegen.gen_outs(case ins, casegen.combo_op(number of inputs))
+### Case Generation:
+- case ins = casegen.w_sets_of_n_ints(number of sets, number of inputs)
+- case outs = casegen.gen_outs(case ins, casegen.combo_op(number of inputs))
