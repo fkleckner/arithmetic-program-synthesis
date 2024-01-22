@@ -8,9 +8,11 @@ main(ins, outs)
 - outs: 1d array of int
 
 ### Example:
+
 - ins = [[1,2], [0,5], [2,2]]
 - outs = [3, 5, 2]
 main(ins, outs) prints "+"
+
 
 - ins = [["a","b","b"], ["aa","d","b"]]
 - outs = ["aaabb", "aaaaaadb"]
