@@ -11,11 +11,13 @@ main(ins, outs)
 
 - ins = [[1,2], [0,5], [2,2]]
 - outs = [3, 5, 2]
+  
 main(ins, outs) prints "+"
 
 
 - ins = [["a","b","b"], ["aa","d","b"]]
 - outs = ["aaabb", "aaaaaadb"]
+  
 main(ins, outs) prints "*", 3, "+"
 
 ### Case Generation:
